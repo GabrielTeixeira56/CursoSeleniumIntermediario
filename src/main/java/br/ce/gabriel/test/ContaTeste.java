@@ -1,16 +1,12 @@
 package br.ce.gabriel.test;
 
 import org.junit.Assert;
-import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
 
 import br.ce.gabriel.core.BaseTest;
-import br.ce.gabriel.core.Propriedades;
 import br.ce.gabriel.pages.ContasPage;
 import br.ce.gabriel.pages.MenuPage;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ContaTeste extends BaseTest {
 	MenuPage menuPage = new MenuPage();
 	ContasPage contasPage = new ContasPage();
@@ -28,7 +24,7 @@ public class ContaTeste extends BaseTest {
 	public void teste2_AlterarConta() {
 		menuPage.acessarTelaListaConta();
 		contasPage.clicaAlterarConta("Conta do teste"); 
-		contasPage.setNome(Propriedades.NOME_CONTA_ALTERADA);
+		contasPage.setNome("Conta alterada");
 		contasPage.salvar();
 		
 		Assert.assertEquals("Conta alterada com sucesso!", contasPage.obterMensagemSucesso());
@@ -37,7 +33,7 @@ public class ContaTeste extends BaseTest {
 	@Test
 	public void teste3_InserirContaMesmoNome() {
 		menuPage.acessarTelaInserirConta();
-		contasPage.setNome(Propriedades.NOME_CONTA_ALTERADA);
+		contasPage.setNome("Conta mesmo nome");
 		contasPage.salvar();
 		
 		Assert.assertEquals("Já existe uma conta com esse nome!", contasPage.obterMensagemErro());

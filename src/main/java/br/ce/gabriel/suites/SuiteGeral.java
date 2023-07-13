@@ -1,12 +1,10 @@
 package br.ce.gabriel.suites;
 
-import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import br.ce.gabriel.core.DriverFactory;
 import br.ce.gabriel.pages.LoginPage;
 import br.ce.gabriel.test.ContaTeste;
 import br.ce.gabriel.test.HomeTeste;
@@ -23,18 +21,14 @@ import br.ce.gabriel.test.ResumoTeste;
 	ResumoTeste.class
 })
 public class SuiteGeral {
-	private static LoginPage loginPage = new LoginPage();
+	private static LoginPage page = new LoginPage();
 	
 	@BeforeClass
-	public static void inicializa() {
-		loginPage.acessarTelaInicial();
-		loginPage.setEmail("gabriel@teixeira");
-		loginPage.setSenha("123456");
-		loginPage.entrar();
-	}
-	
-	@AfterClass
-	public static void finaliza() {
-		DriverFactory.killDriver();
+	public static void reset() {
+		page.acessarTelaInicial();
+		page.setEmail("gabriel@teixeira");
+		page.setSenha("123456");
+		page.entrar();
+		page.resetar();
 	}
 }

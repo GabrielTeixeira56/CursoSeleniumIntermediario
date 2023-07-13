@@ -5,9 +5,7 @@ import static br.ce.gabriel.core.DriverFactory.getDriver;
 import java.util.List;
 
 import org.junit.Assert;
-import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -15,7 +13,6 @@ import br.ce.gabriel.core.BaseTest;
 import br.ce.gabriel.pages.MenuPage;
 import br.ce.gabriel.pages.ResumoPage;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ResumoTeste extends BaseTest {
 	private MenuPage menuPage = new MenuPage();
 	private ResumoPage resPage = new ResumoPage();
@@ -39,6 +36,9 @@ public class ResumoTeste extends BaseTest {
 //			getDriver().findElement(By.xpath("//*[@id='tabelaExtrato']/tbody/tr"));
 //			Assert.fail();
 //		} catch (NoSuchElementException e) {}
+		
+		resPage.selecionarAno("2016");
+		resPage.buscar();
 		
 		List<WebElement> elementosEncontrados 
 			= getDriver().findElements(By.xpath("//*[@id='tabelaExtrato']/tbody/tr"));

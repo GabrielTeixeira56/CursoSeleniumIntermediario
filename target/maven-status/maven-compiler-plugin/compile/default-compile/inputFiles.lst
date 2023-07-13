@@ -1,0 +1,17 @@
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/core/BasePage.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/pages/ResumoPage.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/core/BaseTest.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/test/ResumoTeste.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/test/RemoverMovimentacaoContaTeste.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/test/MovimentacaoTeste.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/test/ContaTeste.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/test/HomeTeste.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/pages/MovimentacaoPage.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/core/Propriedades.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/pages/LoginPage.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/utils/DataUtils.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/pages/HomePage.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/pages/ContasPage.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/pages/MenuPage.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/core/DriverFactory.java
+/home/gabriel/eclipse-workspace/CursoSeleniumIntermediario/src/main/java/br/ce/gabriel/suites/SuiteGeral.java

@@ -1,22 +1,19 @@
 package br.ce.gabriel.test;
 
+import static br.ce.gabriel.utils.DataUtils.obterDataComDiferencaDias;
+import static br.ce.gabriel.utils.DataUtils.obterDataFormatada;
+
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
 import org.junit.Assert;
-import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
 
 import br.ce.gabriel.core.BaseTest;
-import br.ce.gabriel.core.Propriedades;
 import br.ce.gabriel.pages.MenuPage;
 import br.ce.gabriel.pages.MovimentacaoPage;
-import static br.ce.gabriel.utils.DataUtils.obterDataFormatada;
-import static br.ce.gabriel.utils.DataUtils.obterDataComDiferencaDias;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MovimentacaoTeste extends BaseTest {
 	MenuPage menuPage = new MenuPage();
 	MovimentacaoPage movPage = new MovimentacaoPage();
@@ -29,7 +26,7 @@ public class MovimentacaoTeste extends BaseTest {
 		movPage.setDescricao("Movimentação de teste");
 		movPage.setInteressado("Interessado Qualquer");
 		movPage.setValor("500");
-		movPage.setConta(Propriedades.NOME_CONTA_ALTERADA);
+		movPage.setConta("Conta para movimentacoes");
 		movPage.setStatusPago();
 		movPage.salvar();
 
@@ -61,7 +58,7 @@ public class MovimentacaoTeste extends BaseTest {
 		movPage.setDescricao("Movimentação de teste");
 		movPage.setInteressado("Interessado Qualquer");
 		movPage.setValor("500");
-		movPage.setConta(Propriedades.NOME_CONTA_ALTERADA);
+		movPage.setConta("Conta para movimentacoes");
 		movPage.setStatusPago();
 		movPage.salvar();
 
